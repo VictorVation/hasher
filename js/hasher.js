@@ -48,7 +48,7 @@
       update();
       timeout = null;
     }), 200);
-  }
+  };
 
   // Add our event listeners.
   'propertychange change keyup input paste'.split(' ').map(function(ev) {
