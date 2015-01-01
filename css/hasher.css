@@ -1,0 +1,38 @@
+.hero-heading {
+  font-size: 3rem;
+}
+
+.teal-text {
+  color: #1de9b6;
+}
+
+.show {
+  transition: opacity 400ms ease-in-out;
+}
+
+.hide {
+  transition: opacity 400ms ease-in-out;
+  opacity: 0;
+}
+
+a {
+  color: #1de9b6; }
+a:hover {
+  color: #0097a7; }
+
+.center-text {
+  text-align: center;
+}
+
+.main.row {
+  margin-bottom: 10rem;
+}
+
+
+::-moz-selection {
+    background: #b2dfdb;
+}
+
+::selection {
+    background: #b2dfdb;
+}
