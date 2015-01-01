@@ -20,9 +20,9 @@
 
     // Compute the first 16 base64 characters of iterated-SHA-256(domain + '/' + key, 2 ^ difficulty).
     var key = $key.value;
-    var domain = $domain.value;
+    var domain = $site.value;
 
-    if (!key || !domain) {
+    if (!key || !site) {
       $hash.value = '';
       return;
     }
@@ -52,7 +52,7 @@
 
   // Add our event listeners.
   'propertychange change keyup input paste'.split(' ').map(function(ev) {
-    [$key, $domain].map(function(el) {
+    [$key, $site].map(function(el) {
       return el.addEventListener(ev, debouncedUpdate);
     });
   });
