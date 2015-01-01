@@ -6,16 +6,6 @@
   var $show = $('[role=show]');
   var $info = $('.info');
 
-  // $show.addEventListener('click', function(ev){
-  //     ev.stopPropagation();
-  //     ev.preventDefault();
-  //     $show.blur();
-  //     $show.textContent = $show.textContent === 'done' ? 'Learn more' : 'done';
-
-  //     $info.classList.toggle('hide');
-  //     $info.classList.toggle('show');
-  // })
-
   var update = function() {
 
     // Compute the first 16 base64 characters of iterated-SHA-256(domain + '/' + key, 2 ^ difficulty).
@@ -56,4 +46,12 @@
       return el.addEventListener(ev, debouncedUpdate);
     });
   });
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46624647-1', 'auto');
+  ga('send', 'pageview');
 })();

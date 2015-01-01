@@ -396,7 +396,20 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
-
+.ic {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+.ic-cloud-off {
+  background-image: url(../img/ic_cloud_off.svg);
+}
+.ic-autorenew {
+  background-image: url(../img/ic_autorenew.svg);
+}
+.ic-lock-open {
+  background-image: url(../img/ic_lock_open.svg);
+}
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -448,20 +461,6 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  .ic {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto;
-  }
-  .ic-cloud-off {
-    background-image: url(../img/ic_cloud_off.svg);
-  }
-  .ic-autorenew {
-    background-image: url(../img/ic_autorenew.svg);
-  }
-  .ic-lock-open {
-    background-image: url(../img/ic_lock_open.svg);
-  }
 }
 
 /* Larger than tablet */
