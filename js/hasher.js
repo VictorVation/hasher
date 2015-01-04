@@ -23,7 +23,7 @@
       bits = sjcl.hash.sha256.hash(bits);
     }
 
-    var hash = sjcl.codec.base64.fromBits(bits).slice(0, 14);
+    var hash = sjcl.codec.base64.fromBits(bits).slice(0, 16);
     $hash.value = hash;
     return hash;
   };
